@@ -38,7 +38,7 @@ export default function Staff({ serviceDomain, microcmsApiKey }) {
     getReservations(client, `staff[equals]${staff?.id}`).then((_reservations) => {
       setReservations(_reservations)
     })
-  }, [reservations])
+  }, [])
 
   if(!staff) {
     return <></>
